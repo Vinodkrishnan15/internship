@@ -1,10 +1,18 @@
-.image-container{
+.image-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
-.image-container img{
+
+/* CSS for individual images */
+.image-container img {
     width: 200px;
-    height:auto;
-    margin: 10px;;
+    height: 200px;
+    margin: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover effect */
+.image-container img:hover {
+    transform: scale(1.1);
 }
