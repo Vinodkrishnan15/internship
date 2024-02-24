@@ -1,29 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Page Title</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <!---script src='main.js'></script-->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Gallery</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="image-container" id="imageContainer">
+  <div class="image-gallery">
     </div>
-    <script>
-        fetch('images.json')
-        .then(response => response.json())
-        .then(images => {
-            console.log(images); // Log the fetched JSON data to the console
-            var container = document.getElementById('imageContainer');
-            images.forEach(item => {
-                var imageElement = document.createElement('img');
-                imageElement.src = item.image;
-                container.appendChild(imageElement);
-            });
-        })
-        .catch(error => console.error('Error Fetching images:', error));
-    </script>
+  <script src="main.js"></script>
 </body>
 </html>

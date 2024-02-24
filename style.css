@@ -1,18 +1,30 @@
-.image-container {
+.image-gallery {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-}
-
-/* CSS for individual images */
-.image-container img {
-    width: 200px;
-    height: 200px;
+    margin: 0 auto; /* Center the gallery horizontally */
+    width: 80%; /* Adjust width as needed */
+  }
+  
+  .image-container {
+    width: 20%; /* Adjust width for 5 images per row */
     margin: 10px;
+    text-align: center; /* Center image and caption */
+  }
+  
+  .image-container img {
+    width: 100%; /* Fill container width */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Crop if necessary */
     transition: transform 0.3s ease-in-out;
-}
-
-/* Hover effect */
-.image-container img:hover {
+  }
+  
+  .image-container img:hover {
     transform: scale(1.1);
-}
+  }
+  
+  .image-caption {
+    font-weight: bold;
+    margin-top: 5px;
+  }
+  
